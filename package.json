@@ -1,0 +1,27 @@
+{
+  "name": "shapemi",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel serve ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tobychidi/shapemi.git"
+  },
+  "keywords": [],
+  "author": "Toby Chidi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tobychidi/shapemi/issues"
+  },
+  "homepage": "https://github.com/Tobychidi/shapemi#readme",
+  "devDependencies": {
+    "@parcel/optimizer-htmlnano": "^2.0.0-nightly.612",
+    "@parcel/packager-html": "^2.0.0-nightly.612",
+    "@parcel/transformer-html": "^2.0.0-nightly.612",
+    "@parcel/transformer-posthtml": "^2.0.0-nightly.612",
+    "parcel": "^2.0.0-nightly.610"
+  }
+}
