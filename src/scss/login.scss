@@ -1,0 +1,52 @@
+@import "style";
+@import "header";
+@import "footer";
+
+section{
+   margin-top: 150px;
+   
+}
+.formView{
+   width: 90%;
+   max-width: 400px;
+   margin: auto;
+   display: flex;
+   overflow-x: hidden;
+   @include drop-shadow;
+   border-radius: 30px;
+   background-color: $smoke;
+}
+.formContainer{
+   min-width: 100%;
+   padding: 15%;
+
+   h2, p{
+      text-align: center;
+   }
+   
+   form{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5em;
+      width: 100%;
+      margin-top: 40px;
+   }
+
+   button{
+      width: 100%;
+      padding: 1em;
+   }
+}
+
+label{
+   display: block;
+   min-width: 100%;
+   input{
+      display: block;
+      border-radius: 20px;
+      border: none;
+      padding: 1em;
+      @include drop-shadow;
+      width: 100%;
+   }
+}

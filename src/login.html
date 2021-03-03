@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Shapemi</title>
+
+   <link rel="stylesheet" href="./assets/shapemi-icons/scss/style.scss">
+   <link rel="stylesheet" href="./scss/login.scss">
+</head>
+
+<body>
+   <header>
+      <a href="index.html">
+         <h1 class="logo">SHAPEMI</h1>
+      </a>
+      <div>
+         <a href="login.html" class="btn">Login</a>
+         <a href="login.html" class="btn">Signup</a>
+      </div>
+   </header>
+   <main>
+      <section>
+         <div class="formView">
+            <div class="formContainer">
+               <h2>Sign Up</h2>
+               <form>
+                  <label for="name">
+                     <input type="text" name="name">
+                  </label>
+                  <label for="lastName">
+                     <input type="text" name="lastName">
+                  </label>
+                  <label for="email">
+                     <input type="email" name="email">
+                  </label>
+                  <label for="password">
+                     <input type="password" name="password">
+                  </label>
+                  <label for="">
+                     <input type="checkbox" name="agreement">
+                     <p>I have read and agree to your Terms and Conditons</p>
+                  </label>
+               </form>
+               <button class="btn"> Submit</button>
+               <p>Already have an account? <a href="login">Login</a></p>
+            </div>
+            <div class="formContainer">
+               <h2>Login</h2>
+               <form>
+                  <label for="email">
+                     <input type="email" name="email">
+                  </label>
+                  <label for="password">
+                     <input type="password" name="password">
+                  </label>
+               </form>
+               <button class="btn">Login</button>
+               <p>Do not have an account? <a href="login">Sign Up</a></p>
+            </div>
+         </div>
+      </section>
+   </main>
+   <include src="./src/components/footer.html"></include>
+</body>
+</html>

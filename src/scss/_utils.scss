@@ -1,0 +1,14 @@
+$primary-color: #7768ae;
+
+$gray: #707070;
+$smoke: #f9f9f9;
+
+$main-padding: 10%;
+
+
+
+//Mixins
+
+@mixin drop-shadow {
+   box-shadow: 0px 3px 6px 0px rgba(0,0,0,.16);
+}

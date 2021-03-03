@@ -1,0 +1,33 @@
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$sm-check-2: unicode(ea03);
+$sm-chevron-down: unicode(ea04);
+$sm-plus: unicode(ea05);
+$sm-trash-alt: unicode(ea06);
+$sm-save: unicode(ea07);
+
+.sm-check-2::before {
+  content: $sm-check-2;
+}
+
+.sm-chevron-down::before {
+  content: $sm-chevron-down;
+}
+
+.sm-plus::before {
+  content: $sm-plus;
+}
+
+.sm-trash-alt::before {
+  content: $sm-trash-alt;
+}
+
+.sm-save::before {
+  content: $sm-save;
+}
+

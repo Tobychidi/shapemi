@@ -1,0 +1,13 @@
+@import "utils";
+@import "style";
+
+header{
+   display: flex;
+   justify-content: space-between;
+   padding: 2rem $main-padding;
+   position: fixed;
+   top: 0; left: 0;
+   width: 100%;
+}
+
+

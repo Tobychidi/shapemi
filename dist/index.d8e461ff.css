@@ -1,0 +1,171 @@
+/* --------------------------------
+
+shapemi-icons Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@font-face {
+  font-family: "shapemi-icons";
+  src: url("shapemi-icons.58634039.eot");
+  src: url("shapemi-icons.58634039.eot") format("embedded-opentype"), url("shapemi-icons.bd1b33ca.woff2") format("woff2"), url("shapemi-icons.8a1a8928.woff") format("woff"), url("shapemi-icons.0860913a.ttf") format("truetype"), url("shapemi-icons.a278f0bb.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/*------------------------
+	base class definition
+-------------------------*/
+.sm {
+  display: inline-block;
+  font: normal normal normal 1em/1 "shapemi-icons";
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*------------------------
+  change icon size
+-------------------------*/
+/* relative units */
+.sm-sm {
+  font-size: 0.8em;
+}
+.sm-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.sm-16 {
+  font-size: 16px;
+}
+.sm-32 {
+  font-size: 32px;
+}
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+.sm-bg-square,
+.sm-bg-circle {
+  padding: 0.35em;
+  background-color: #eee;
+}
+.sm-bg-circle {
+  border-radius: 50%;
+}
+/*------------------------------------
+  use icons as list item markers
+-------------------------------------*/
+.sm-ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+.sm-ul > li {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+.sm-ul > li > .sm {
+  margin-right: 0.4em;
+  line-height: inherit;
+}
+/*------------------------
+  spinning icons
+-------------------------*/
+.sm-is-spinning {
+  -webkit-animation: sm-spin 2s infinite linear;
+  -moz-animation: sm-spin 2s infinite linear;
+  animation: sm-spin 2s infinite linear;
+}
+@-webkit-keyframes sm-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes sm-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes sm-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+.sm-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.sm-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.sm-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.sm-flip-y {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.sm-flip-x {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+/*------------------------
+	icons
+-------------------------*/
+.sm-check-2::before {
+  content: "\ea03";
+}
+.sm-chevron-down::before {
+  content: "\ea04";
+}
+.sm-plus::before {
+  content: "\ea05";
+}
+.sm-trash-alt::before {
+  content: "\ea06";
+}
+.sm-save::before {
+  content: "\ea07";
+}
+/*# sourceMappingURL=index.d8e461ff.css.map */

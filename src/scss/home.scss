@@ -1,0 +1,23 @@
+@import "style";
+@import "header";
+@import "topSection";
+@import "footer";
+
+.shapeSection{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 40px;
+   margin-top: 10rem;
+   padding: 0 $main-padding;
+
+
+   article{
+      @include drop-shadow;
+      height: 250px;
+      border-radius: 30px;
+      min-width: 200px;
+      padding: 50px 30px;
+      background-color: white;
+   }
+}

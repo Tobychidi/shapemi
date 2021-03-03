@@ -1,0 +1,155 @@
+/* --------------------------------
+
+shapemi-icons Web Font
+Generated using nucleoapp.com
+
+-------------------------------- */
+@import "variables";
+@import "mixins";
+
+@font-face {
+  font-family: 'shapemi-icons';
+  src: url('#{$sm-font-path}/shapemi-icons.eot');
+  src: url('#{$sm-font-path}/shapemi-icons.eot') format('embedded-opentype'),
+    url('#{$sm-font-path}/shapemi-icons.woff2') format('woff2'),
+    url('#{$sm-font-path}/shapemi-icons.woff') format('woff'),
+    url('#{$sm-font-path}/shapemi-icons.ttf') format('truetype'),
+    url('#{$sm-font-path}/shapemi-icons.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*------------------------
+	base class definition
+-------------------------*/
+
+.sm {
+  display: inline-block;
+  font: normal normal normal 1em/1 'shapemi-icons';
+  speak: none;
+  text-transform: none;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------------------
+  change icon size
+-------------------------*/
+
+/* relative units */
+.sm-sm {
+  font-size: 0.8em;
+}
+.sm-lg {
+  font-size: 1.2em;
+}
+/* absolute units */
+.sm-16 {
+  font-size: 16px;
+}
+.sm-32 {
+  font-size: 32px;
+}
+
+/*----------------------------------
+  add a square/circle background
+-----------------------------------*/
+
+.sm-bg-square,
+.sm-bg-circle {
+  padding: 0.35em;
+  background-color: $sm-background-color;
+}
+
+.sm-bg-circle {
+  border-radius: 50%;
+}
+
+/*------------------------------------
+  use icons as list item markers
+-------------------------------------*/
+
+.sm-ul {
+  padding-left: 0;
+  list-style-type: none;
+
+  > li {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+  }
+
+  > li > .sm {
+    margin-right: $sm-li-margin-right;
+    line-height: inherit;
+  }
+}
+
+/*------------------------
+  spinning icons
+-------------------------*/
+
+.sm-is-spinning {
+  -webkit-animation: sm-spin 2s infinite linear;
+  -moz-animation: sm-spin 2s infinite linear;
+  animation: sm-spin 2s infinite linear;
+}
+
+@-webkit-keyframes sm-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes sm-spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@keyframes sm-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/*------------------------
+  rotated/flipped icons
+-------------------------*/
+
+.sm-rotate-90  {
+	@include sm-rotate(90deg, 1);
+}
+
+.sm-rotate-180 {
+	@include sm-rotate(180deg, 2);
+}
+
+.sm-rotate-270 {
+	@include sm-rotate(270deg, 3);
+}
+
+.sm-flip-y {
+	@include sm-flip(-1, 1, 0);
+}
+.sm-flip-x {
+	@include sm-flip(1, -1, 2);
+}
+
+@import "icons";
