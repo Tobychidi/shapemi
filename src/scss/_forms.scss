@@ -1,12 +1,4 @@
-@import "style";
-@import "header";
-@import "footer";
-
-section{
-   margin-top: 150px;
-   
-}
-.formView{
+.formView {
    width: 90%;
    max-width: 400px;
    margin: auto;
@@ -16,37 +8,60 @@ section{
    border-radius: 30px;
    background-color: $smoke;
 }
-.formContainer{
+
+.formContainer {
    min-width: 100%;
    padding: 15%;
+   $gap: 1.5em;
 
-   h2, p{
+   h2,
+   &>p {
       text-align: center;
    }
-   
-   form{
+
+   &>P {
+      margin-top: 20px;
+      font-size: .9em;
+
+      a {
+         color: $green;
+      }
+   }
+
+   form {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5em;
+      gap: $gap;
       width: 100%;
       margin-top: 40px;
    }
 
-   button{
+   button {
       width: 100%;
       padding: 1em;
+      margin-top: $gap;
    }
 }
 
-label{
-   display: block;
+label {
+   display: flex;
+   flex-direction: column;
    min-width: 100%;
-   input{
+
+   input {
       display: block;
       border-radius: 20px;
       border: none;
       padding: 1em;
       @include drop-shadow;
       width: 100%;
+   }
+
+   p {
+      text-align: left;
+      margin-left: 1.5em;
+      margin-bottom: 5px;
+      font-size: .9em;
+      font-weight: 500;
    }
 }

@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap");
 *,
 *::after,
 *::before {
@@ -14,7 +13,6 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 500;
   color: #707070;
   background-color: #f9f9f9;
 }
@@ -56,7 +54,6 @@ h2 {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 500;
   color: #707070;
   background-color: #f9f9f9;
 }
@@ -107,134 +104,6 @@ header {
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 500;
-  color: #707070;
-  background-color: #f9f9f9;
-}
-main {
-  min-height: calc(100vh - 150px);
-}
-a {
-  text-decoration: none;
-}
-h2 {
-  font-size: 1.5em;
-  font-weight: 600;
-}
-.logo {
-  color: #7768ae;
-  font-weight: 600;
-  font-size: 2em;
-}
-.btn {
-  background-color: #7768ae;
-  border: none;
-  cursor: pointer;
-  padding: 10px 30px;
-  border-radius: 20px;
-  color: white;
-  font-weight: 500;
-  font-size: 0.9em;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-}
-.topSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 100vh;
-  max-height: 700px;
-  padding: 50px 10%;
-}
-.topSection img {
-  width: 70%;
-}
-.greeting {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 50px;
-}
-.greeting button {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.greeting button span .icon {
-  font-size: 0.8em;
-  margin-top: 3px;
-}
-.formView {
-  width: 90%;
-  max-width: 400px;
-  margin: auto;
-  display: flex;
-  overflow-x: hidden;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-  border-radius: 30px;
-  background-color: #f9f9f9;
-}
-.formContainer {
-  min-width: 100%;
-  padding: 15%;
-}
-.formContainer h2, .formContainer > p {
-  text-align: center;
-}
-.formContainer > P {
-  margin-top: 20px;
-  font-size: 0.9em;
-}
-.formContainer > P a {
-  color: #3bb273;
-}
-.formContainer form {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5em;
-  width: 100%;
-  margin-top: 40px;
-}
-.formContainer button {
-  width: 100%;
-  padding: 1em;
-  margin-top: 1.5em;
-}
-label {
-  display: flex;
-  flex-direction: column;
-  min-width: 100%;
-}
-label input {
-  display: block;
-  border-radius: 20px;
-  border: none;
-  padding: 1em;
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-  width: 100%;
-}
-label p {
-  text-align: left;
-  margin-left: 1.5em;
-  margin-bottom: 5px;
-  font-size: 0.9em;
-  font-weight: 500;
-}
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font: inherit;
-  color: inherit;
-}
-body {
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
   color: #707070;
   background-color: #f9f9f9;
 }
@@ -279,25 +148,50 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: #7768ae;
+  color: white;
 }
-.shapeSection {
+section {
+  margin-top: 150px;
+}
+.formView {
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  overflow-x: hidden;
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 30px;
+  background-color: #f9f9f9;
+}
+.formContainer {
+  min-width: 100%;
+  padding: 15%;
+}
+.formContainer h2, .formContainer p {
+  text-align: center;
+}
+.formContainer form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  margin-top: 200px;
-  padding: 0 10%;
+  gap: 1.5em;
+  width: 100%;
+  margin-top: 40px;
 }
-.shapeSection article {
+.formContainer button {
+  width: 100%;
+  padding: 1em;
+}
+label {
+  display: block;
+  min-width: 100%;
+}
+label input {
+  display: block;
+  border-radius: 20px;
+  border: none;
+  padding: 1em;
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
-  height: 250px;
-  border-radius: 30px;
-  min-width: 200px;
-  padding: 50px 30px;
-  background-color: white;
+  width: 100%;
 }
-.formSection {
-  margin-top: 200px;
-}
-/*# sourceMappingURL=index.7e2af13a.css.map */
+/*# sourceMappingURL=login.fa5e9a68.css.map */

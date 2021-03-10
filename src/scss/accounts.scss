@@ -1,0 +1,25 @@
+@import "style";
+@import "header";
+@import "forms";
+@import "footer";
+
+section {
+   margin-top: 150px;
+
+}
+
+#agreement {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   gap: 10px;
+   input{
+      display: block;
+   }
+
+   p {
+      margin: 0;
+      font-size: .9em;
+   }
+   
+}

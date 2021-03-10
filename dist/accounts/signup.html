@@ -7,18 +7,16 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Shapemi</title>
 
-   <link rel="stylesheet" href="./assets/shapemi-icons/scss/style.scss">
-   <link rel="stylesheet" href="./scss/login.scss">
+   <link rel="stylesheet" href="/accounts/signup.ed37d0c6.css">
 </head>
 
 <body>
    <header>
-      <a href="index.html">
+      <a href="/index.html">
          <h1 class="logo">SHAPEMI</h1>
       </a>
       <div>
-         <a href="login.html" class="btn">Login</a>
-         <a href="login.html" class="btn">Signup</a>
+         <a href="/accounts/login.html" class="btn">Login</a>
       </div>
    </header>
    <main>
@@ -28,41 +26,41 @@
                <h2>Sign Up</h2>
                <form>
                   <label for="name">
+                     <p>Name</p>
                      <input type="text" name="name">
                   </label>
                   <label for="lastName">
+                     <p>Last Name</p>
                      <input type="text" name="lastName">
                   </label>
                   <label for="email">
+                     <p>Email</p>
                      <input type="email" name="email">
                   </label>
                   <label for="password">
+                     <p>Password</p>
                      <input type="password" name="password">
                   </label>
-                  <label for="">
+                  <div id="agreement">
                      <input type="checkbox" name="agreement">
-                     <p>I have read and agree to your Terms and Conditons</p>
-                  </label>
+                     <p>I agree your Terms and Conditons</p>
+                  </div>
                </form>
                <button class="btn"> Submit</button>
-               <p>Already have an account? <a href="login">Login</a></p>
-            </div>
-            <div class="formContainer">
-               <h2>Login</h2>
-               <form>
-                  <label for="email">
-                     <input type="email" name="email">
-                  </label>
-                  <label for="password">
-                     <input type="password" name="password">
-                  </label>
-               </form>
-               <button class="btn">Login</button>
-               <p>Do not have an account? <a href="login">Sign Up</a></p>
+               <p>Already have an account? <a href="/accounts/login.html">Login</a></p>
             </div>
          </div>
       </section>
    </main>
-   <include src="./src/components/footer.html"></include>
+   <footer>
+   <p>Made with <span style="
+                              margin: 0 10px;
+                              color: red;
+">
+      ❤</span> by TobyChidi</p>
+</footer>
+
+   <!-- <script src="./js/pages/accounts.js"></script> -->
 </body>
-</html>
+
+</html><script src="/accounts/signup.906979b6.js"></script>
