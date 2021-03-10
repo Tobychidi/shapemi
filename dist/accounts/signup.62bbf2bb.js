@@ -474,7 +474,7 @@ const signupUser = () => {
   const password = inputs[3].value;
   const agreement = inputs[4].checked;
   if (agreement) {
-    _axiosDefault.default.post('shapemi.herokuapp.com/user/', {
+    _axiosDefault.default.post('https://shapemi.herokuapp.com/user/', {
       name: name,
       lastname: lastname,
       email: email,

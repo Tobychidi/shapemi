@@ -13,7 +13,7 @@ const signupUser = () => {
 
 
    if (agreement) {
-      axios.post('shapemi.herokuapp.com/user/', {
+      axios.post('https://shapemi.herokuapp.com/user/', {
          name: name,
          lastname: lastname,
          email: email,
